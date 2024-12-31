@@ -1,48 +1,55 @@
 # Realtime Energy
-Webapp to show real time energy consumption based on live readings from electricity meter P1-port and SMA Solar inverter
+Webapp om energieverbruik in real time weer te geven, gebaseerd op live data uit teller met P1-port en SMA omvormer.
 
 ![mockup-small](https://github.com/user-attachments/assets/fb0771be-82e6-452d-bec4-2a595e65fb29)
 
-## Description
-Most people with a digital meter face the same problem: How do we pull usefull data from it on the fly? Energy companies provide you with historical data, but always with a big delay. When you're living f.e. in Belgium and suppliers decide to overcharge you when your energy consumpion is above a certain value, it is obvious that you need to know what your current consumption is. That's exactly what this little web app takes care of!
+## Beschrijving
+De meeste mensen met een digitale meter en zonnepanelen lopen tegen het zelfde probleem aan: Hoe lees ik live nuttige info uit? Energiebedrijven voorzien je met historische data, maar altijd met een grote vertraging. Wanneer je bvb in België woont en nutsbedrijven beslissen om je extra's aan te rekenen wanneer je energieverbruik boven een bepaalde waarde gaat, ligt het voor de hand dat je on-the-fly moet weten wat je huidige afname is. En dit is exact wat deze kleine webapp voorziet.
 
-Every 2 seconds the current consumption is calculated based on what you pull from the net and what your solar panels are delivering.
-Based on that value, you can decide if you're willing to start another "big user" such as a washing machine or a vacuum cleaner.
-You can set up a warning treshold as well.
+Iedere 2 seconden wordt je reeële afname van het net berekend, gebaseerd op wat je verbruikt en wat je zonnepanelen opbrengen.
+Rekening houdende met die waarde kan je beslissen of het opportuun is om nog een "grote verbruiker" te starten zoals een wasmachine of stofzuiger.
+Je kan ook een alarmpijl instellen.
 
-Data obtained opens doors for further interactions with home automation (domotica) and historical logging.
+De verkregen data stelt je in staat om verdere interacties op te zetten met domotica en andere logging software.
 
-This project doesn't only cover the end product website, but all steps taken to read out a P1 port and SMA web API.
+Dit project omvat niet enkel de code van de webapp, maar ook alle stappen genomen om de P1 poort en SMA web API uit te lezen.
 
+## Functies
 
-## Prerequisites
+- Weergave opbrengst zonnepanelen
+- Weergave eigen verbruik
+- Weergave afname/injectie naar het net
+- Alarm wanneer afname boven bepaalde limiet gaat
+- Weergave huidige maandpiek
+- Weergave gemidded verbruik laatste 15 min
 
-- Linux based OS
-- An electricity meter with connected P1 port via serial or USB convertor
-- A SMA based solar invertor available via LAN
+## Syteemvereisten
+
+- Linux gebaseerd OS
+- Een digitale teller met aangesloten P1 poort via com-poort of USB convertor
+- Een SMA gebaseerde omvormer van zonnepanelen verbonden met je LAN netwerk
 - Apache webserver
 - Php
-- -Python
-- Some time, this project has no installer
+- Python
+- Wat knutseltijd, want dit project heeft geen kant en klare installer
+
+### Optioneel
+
+- Cacti voor historische rrd logging
+
+## Installatie en configuratie
+
+Alle installatie en configuratiestappen kan je terugvinden in de Wiki:
+
+- Digitale meterwaarden uitlezen naar json file
+- Omvormer zonnepanelen uitlezen naar json file
+- Services in Linux opzetten om het verzamelen te automatiseren en in de lucht te houden
+- Verschillende debugtips
+- De json files linken aan het webproject zodat je het kan gebruiken
 
 ### OPTIONAL
 
-- Cacti for rrd logging
+- Configureer Cacti zodat deze historische logging doet van de json files
 
-
-## Installation & Configuration
-
-All installation & configuration steps can be found in the Wiki:
-
-- Reading out values from meter to json file
-- Reading out values from solar panels to json file
-- Setting up services to automate above
-- Debug tricks
-- Link json files to php project and start using
-
-### OPTIONAL
-
-- Confige Cacti to store historical data based on the json files
-
-## Thanks to
-- jensdepuydt: For providing a Python based script to read out P1 telegrams
+## Dank aan
+- jensdepuydt: Om mij een basis Python script te voorzien om P1 telegrams uit te lezen
