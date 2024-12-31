@@ -1,4 +1,7 @@
 # Realtime Energy
+
+Go to the [readme in dutch](https://github.com/stubbornbe/realtime-energy/blob/main/README.nl.md)
+
 Webapp to show real time energy consumption based on live readings from electricity meter P1-port and SMA Solar inverter
 
 ![mockup-small](https://github.com/user-attachments/assets/fb0771be-82e6-452d-bec4-2a595e65fb29)
