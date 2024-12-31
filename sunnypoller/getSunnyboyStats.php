@@ -1,21 +1,7 @@
 <?php
-/***********
-PHP script to read out Sunnyboy values and writeout to file in json format
+include('config.php');
 
-Inputs needed: 
-- URL of Sunnyboy (Fixed IP / DHCP reservation needed)
-- Password of the "user" user
-- Path to store the current API token
-
-To prevent new API login every run, the API token is written to sunnyToken.txt and tested first before issuing a new token.
-If you find the location insecure, set up a proper one.
-
-***********/
-/***********TO CONFIGURE************/
-$url="https://192.168.254.251/dyn/";
-$pw="SMA1234sma!";
-$sunnyTokenPath=".";
-/***********END TO CONFIGURE************/
+$url="https://".$hostname."/dyn/";
 
 $sunnySessionId=false;
 $returnValue=false;
@@ -47,7 +33,7 @@ if(isset($returnValue['result'])){
 	$opwekNu=$returnValue["result"][$key]["6100_40263F00"][1][0]["val"]/1000; 
 	$opwekVandaag=$returnValue["result"][$key]["6400_00260100"][1][0]["val"];
 	
-	$myTarget = fopen("sunnyValues.txt",'w') ;
+	$myTarget = fopen("sunnydata.json",'w') ;
 	fwrite($myTarget,json_encode(array('result' => "success",'sunnyOut'=> $opwekNu,'sunnyTotal'=> $opwekVandaag)));
 	fclose($myTarget);
 }
