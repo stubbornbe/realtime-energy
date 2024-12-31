@@ -25,7 +25,7 @@ This project doesn't only cover the end product website, but all steps taken to 
 - -Python
 - Some time, this project has no installer
 
-###OPTIONAL
+### OPTIONAL
 
 - Cacti for rrd logging
 
@@ -40,7 +40,7 @@ All installation & configuration steps can be found in the Wiki:
 - Debug tricks
 - Link json files to php project and start using
 
-###OPTIONAL
+### OPTIONAL
 
 - Confige Cacti to store historical data based on the json files
 
