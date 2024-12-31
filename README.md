@@ -14,7 +14,7 @@ Data obtained opens doors for further interactions with home automation (domotic
 
 This project doesn't only cover the end product website, but all steps taken to read out a P1 port and SMA web API.
 
-## Funtions
+## Features
 
 - Display yield solar panels
 - Display current consumption
