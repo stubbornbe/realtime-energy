@@ -14,6 +14,14 @@ Data obtained opens doors for further interactions with home automation (domotic
 
 This project doesn't only cover the end product website, but all steps taken to read out a P1 port and SMA web API.
 
+## Funtions
+
+- Display yield solar panels
+- Display current consumption
+- Display demand/injection from/to the net
+- Alert when consumption above treshold
+- Show current monthly peak
+- Show average consumption last 15 minutes
 
 ## Prerequisites
 
@@ -22,13 +30,12 @@ This project doesn't only cover the end product website, but all steps taken to 
 - A SMA based solar invertor available via LAN
 - Apache webserver
 - Php
-- -Python
+- Python
 - Some time, this project has no installer
 
 ### OPTIONAL
 
 - Cacti for rrd logging
-
 
 ## Installation & Configuration
 
