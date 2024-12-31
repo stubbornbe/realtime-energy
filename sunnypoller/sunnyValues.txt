@@ -1,1 +1,0 @@
-{"result":"success","sunnyOut":0,"sunnyTotal":15589612}
