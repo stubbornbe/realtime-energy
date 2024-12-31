@@ -1,0 +1,542 @@
+@import "vars.styl";
+@import "mixins.styl";
+
+html{
+	width:100%;
+	height:100%;
+}
+
+body {
+	width:100%;
+	height:100%;
+	font-family:Inter;
+	color:$lopend;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: (26.25/21)em;
+	-webkit-text-size-adjust:none;
+}
+
+h1{
+	color: $blauw;
+	font-size: 27px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 96.296% */
+}
+
+.bovenkant{
+	position: relative;
+	float: left;
+	width: 100%;
+	padding-bottom:66px;
+	background: #BFDAD7;
+}
+
+.onderkant{
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-top:-25px;
+	border-radius: 25px 25px 0px 0px;
+	background: #FFF;
+	min-height: 170px;
+}
+
+.centerCont{
+	position: relative;
+	float: left;
+	left:50%;
+	margin-left: -206px;
+	width:412px;
+}
+
+.sfeerBol1{
+	position: absolute;
+	top:203px;
+	left:-59px;
+	width:230px;
+	height: 230px;
+	background-color:#92B8B4;
+	border-radius: 50%;
+	filter: blur(50px);
+}
+
+a.btnVerbruiksLijst{
+	position: absolute;
+	display: block;
+	top:50px;
+	right: 0px;
+	width:60px;
+	height:60px;
+	background-color: #FFF;
+	filter: drop-shadow(0px 4px 4px rgba(6, 87, 74, 0.25));
+	background-image: url('../images/toestellen.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 31px;
+	border-radius: 50%;
+	background-color: $blauw;
+}
+
+a.btnClose{
+	position: absolute;
+	display: block;
+	top:50px;
+	right: 0px;
+	width:60px;
+	height:60px;
+	filter: drop-shadow(0px 4px 4px rgba(6, 87, 74, 0.25));
+	background-size: 31px;
+	border-radius: 50%;
+	background-color: $blauw;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.crosssign {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transform: rotate(45deg);
+	cursor: pointer;
+}
+/*
+.crosssign_circle {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: #f87c7c;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+
+.crosssign .crosssign_circle:hover {
+  background-color: #F00;
+}
+*/
+.crosssign_stem,
+.crosssign_stem2 {
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.crosssign_stem {
+  width: 2px;
+  height: 23px;
+}
+
+.crosssign_stem2 {
+  width: 23px;
+  height: 2px;
+}
+
+.sfeerBol2{
+	position: absolute;
+	top:119px;
+	left:50%;
+	margin-left:50px;
+	width:88px;
+	height: 88px;
+	background-color:rgba(255, 249, 86, 0.40);
+	border-radius: 50%;
+	filter: blur(27px);
+}
+
+
+.title{
+	position: absolute;
+	top:50px;
+}
+
+.zonneCont{
+	  position: relative;
+		float: left;
+		width:192px;
+		height: 192px;
+		margin-left: 50%;
+		left:-96px;
+		margin-top:130px;
+}
+
+.zonBol1{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	background-color: #FFF;
+	border-radius: 50%;
+	opacity: 0.4;
+}
+
+.zonBol2{
+	position: relative;
+	float: left;
+	width:158px;
+	height: 158px;
+	margin: 17px 17px 17px 17px;
+	border-radius: 50%;
+	background-color: #FFF;
+	text-align: center;
+	background-image: url('../images/sun.svg');
+	background-size: 52px;
+	background-position: center 21px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	padding-top:48px;
+}
+
+.zonTitel{
+	color: $blauw;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	
+	line-height: 26px; /* 260% */
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+}
+
+.zonWaarde{
+	margin-top:5px;
+	color: $blauw;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 74.286% */
+}
+
+.zonEenheid{
+	margin-top:4px;
+	color: $blauw;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 136.842% */
+}
+
+.valBox{
+		position: relative;
+		float: left;
+		width: 340px;
+		left: 50%;
+		margin-left: -170px;
+		height:100px;
+		border-radius: 17px;
+		clear: both;
+		margin-top:15px;
+}
+
+.vlBoxHalfCont{
+	position: relative;
+	float: left;
+	width: 340px;
+	left: 50%;
+	margin-left: -170px;
+	clear: both;
+	margin-top:15px;
+}
+
+.valBoxHalf{
+	position: relative;
+	float: left;
+	width: 160px;
+	height:100px;
+	border-radius: 17px;
+	background: #E2F5F3;
+	box-shadow: 0px 9px 4px -5px #A6C6C1;
+	color:$blauw;
+}
+
+.kwartPiek{
+	border-radius: 8px;
+	background: #443FEC;
+	width: 130px;
+	height: 36px;
+	background-image:url('../images/mountWhite.svg');
+	background-repeat: no-repeat;
+	background-size: 34px;
+	background-position: 9px 6px;
+	margin-left:15px;
+	margin-top:16px;
+	padding-left:60px;
+	color: #FFF;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 36px; /* 185.714% */
+	letter-spacing: 1.12px;
+	
+	box-sizing: border-box;
+}
+
+.maandPiek{
+	width: 130px;
+	height: 36px;
+	background-image:url('../images/mountPurple.svg');
+	background-repeat: no-repeat;
+	background-size: 33px;
+	background-position: 9px 6px;
+	margin-left:15px;
+	margin-top:16px;
+	padding-left:55px;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px; /* 260% */
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	
+	box-sizing: border-box;
+}
+
+.piekTekst{
+	position: absolute;
+	left:20px;
+	bottom: 13px;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 118.182% */
+}
+
+.piekEenheid{
+	position: absolute;
+	right:20px;
+	bottom: 13px;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 216.667% */
+}
+
+.valBoxAbs{
+		position: absolute;
+		width: 340px;
+		left: 50%;
+		margin-left: -170px;
+		height:100px;
+		border-radius: 17px;
+		clear: both;
+		top:40px;
+		display: block;
+}
+
+.alertBox{
+		position: relative;
+		float: left;
+		width: 340px;
+		height:66px;
+		margin-top: 67px;
+		/*margin-top: 110px;*/
+		margin-bottom: 7px;
+		left: 50%;
+		margin-left: -170px;
+		border-radius: 17px;
+		clear: both;
+		color: #FFF;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 26px; /* 216.667% */
+		letter-spacing: 0.96px;
+		border-radius: 17px;
+		background: #FC0C6C;
+		box-shadow: 0px 9px 4px -5px #B48B92;
+		box-sizing: border-box;
+		padding-top:35px;
+		padding-left: 55px;
+		background-image: url('../images/alert.svg');
+		background-size: 15px;
+		background-repeat: no-repeat;
+		background-position: 20px 42px;
+		transition: all 1000ms;
+}
+
+.alertBoxTranition{
+	margin-top:110px;
+}
+
+.afname{
+	background: #FFE2E7;
+	/*box-shadow: 0px 9px 4px -5px #B48B92;*/
+	box-shadow: 0px 9px 4px -5px rgba(100, 43, 53, 0.51);
+}
+
+.injectie{
+	background: #C5F9C9;
+	box-shadow: 0px 9px 4px -5px #98CA9F;
+}
+
+.verbruik{
+	margin-top:18px;
+	background: #E2F5F3;
+	box-shadow: 0px 9px 4px -5px #A6C6C1;
+}
+
+.waardeIcon{
+	position: relative;
+	float: left;
+	width:64px;
+	height: 64px;
+	border-radius: 50%;
+	background-color: #FFF;
+	
+	margin-left:20px;
+	margin-top:18px;
+	margin-right:65px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 34px;
+}
+
+.afnameIcon{
+	background-image: url('../images/afname.svg');
+	filter: drop-shadow(0px 4px 4px #B9949A);
+}
+
+.injectieIcon{
+	background-image: url('../images/injectie.svg');
+	filter: drop-shadow(0px 4px 4px rgba(6, 87, 74, 0.25));
+}
+
+.verbruikIcon{
+	background-image: url('../images/verbruik.svg');
+	filter: drop-shadow(0px 4px 4px rgba(6, 87, 74, 0.25));
+}
+
+.waardeBox{
+	position: relative;
+	float: left;
+	margin-top: 19px;
+	width: 150px;
+}
+
+.waardeWat{
+	color: $blauw;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px; /* 260% */
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	width:100%;
+}
+
+.waardeVal{
+	color: $blauw;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 74.286% */
+}
+
+.minus{
+	position: absolute;
+	top:24px;
+	left:-18px;
+	display: none;
+}
+
+.waardeAlert{
+	color: #FC0C6C;
+}
+
+.waardeEenheid{
+	position: absolute;
+	right: 36px;
+	top: 52px;
+	color: $blauw;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 136.842% */
+}
+
+.overlay{
+	position: fixed;
+	display: block;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+	background-color: #FFF;
+}
+
+.apparatenLijst{
+	display: block;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width:100%;
+}
+
+.apparaat{
+	position: relative;
+	float: left;
+	width:100%;
+	border-radius: 17px;
+	background: #F8F8F8;
+	box-shadow: 0px 6px 4px -5px #CCD7D5;
+	color: $blauw;
+	margin-bottom: 8px;
+	height: 50px;
+}
+
+.apparaatNaam{
+	position: relative;
+	float: left;
+	
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px; /* 260% */
+	letter-spacing: 0.8px;
+	line-height: 50px;
+	margin-left: 21px;
+	margin-right: 21px;
+
+}
+
+.apparaatVerbruik{
+	position: relative;
+	float: right;
+	text-align: right;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 123.81% */
+	line-height: 50px;
+	margin-right: 20px;
+}
+
+.apparaatEH{
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 236.364% */
+}
+
+.hide{display:none;}
+.mt80px{margin-top:80px;}
+.mb80px{margin-bottom:80px;}
+.txtCenter{text-align:center;}
+.w100{width:100%;}
+
+.rfll{
+	position:relative;
+	float:left;
+}
+
+.rflr{
+	position:relative;
+	float:right;
+}
+
+.clear {
+  clear: both;
+}
