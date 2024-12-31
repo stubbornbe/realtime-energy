@@ -47,7 +47,7 @@ Alle installatie en configuratiestappen kan je terugvinden in de Wiki:
 - Verschillende debugtips
 - De json files linken aan het webproject zodat je het kan gebruiken
 
-### OPTIONAL
+### Optioneel
 
 - Configureer Cacti zodat deze historische logging doet van de json files
 
