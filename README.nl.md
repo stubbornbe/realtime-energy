@@ -55,4 +55,4 @@ Alle installatie en configuratiestappen kan je terugvinden in de Wiki:
 - Configureer Cacti zodat deze historische logging doet van de json files
 
 ## Dank aan
-- jensdepuydt: Om mij een basis Python script te voorzien om P1 telegrams uit te lezen
+- [jensdepuydt](https://github.com/jensdepuydt/belgian_digitalmeter_p1): Om mij een basis Python script te voorzien om P1 telegrams uit te lezen
