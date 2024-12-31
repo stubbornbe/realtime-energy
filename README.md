@@ -55,4 +55,4 @@ All installation & configuration steps can be found in the Wiki:
 - Confige Cacti to store historical data based on the json files
 
 ## Thanks to
-- jensdepuydt: For providing a Python based script to read out P1 telegrams
+- [jensdepuydt](https://github.com/jensdepuydt/belgian_digitalmeter_p1): For providing a Python based script to read out P1 telegrams
