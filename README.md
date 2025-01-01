@@ -1,4 +1,4 @@
-# Realtime Energy
+# Realtime Energy smart meter | slimme meter
 
 Ga naar de [Nederlandse readme](https://github.com/stubbornbe/realtime-energy/blob/main/README.nl.md)
 
