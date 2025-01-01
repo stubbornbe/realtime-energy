@@ -42,13 +42,12 @@ Dit project omvat niet enkel de code van de webapp, maar ook alle stappen genome
 
 ## Installatie en configuratie
 
-Alle installatie en configuratiestappen kan je terugvinden in de Wiki:
+Alle installatie en configuratiestappen kan je terugvinden in de Wiki, wel alleen in het Engels:
 
-- Digitale meterwaarden uitlezen naar json file
-- Omvormer zonnepanelen uitlezen naar json file
-- Services in Linux opzetten om het verzamelen te automatiseren en in de lucht te houden
-- Verschillende debugtips
-- De json files linken aan het webproject zodat je het kan gebruiken
+- [Configureer P1 poller voor slimme meter](https://github.com/stubbornbe/realtime-energy/wiki/Set-up-P1-poller-for-electricity-meter)
+- [Configureer poller voor P1](https://github.com/stubbornbe/realtime-energy/wiki/Set-up-poller-for-SMA)
+- [Configureer de Realtime Energy webapp](https://github.com/stubbornbe/realtime-energy/wiki/Set-up-the-Realtime-Energy-webapp)
+- Historische logging opzetten in Cacti (Ok, ik moet dit stuk nog schrijven, maar ik doe het weldra, beloofd)
 
 ### Optioneel
 
