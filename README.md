@@ -44,11 +44,10 @@ This project doesn't only cover the end product website, but all steps taken to 
 
 All installation & configuration steps can be found in the Wiki:
 
-- Reading out values from meter to json file
-- Reading out values from solar panels to json file
-- Setting up services to automate above
-- Debug tricks
-- Link json files to php project and start using
+- [Set up P1 poller for electricity meter](https://github.com/stubbornbe/realtime-energy/wiki/Set-up-P1-poller-for-electricity-meter)
+- [Set up poller for SMA](https://github.com/stubbornbe/realtime-energy/wiki/Set-up-poller-for-SMA)
+- [Set up the Realtime Energy webapp](https://github.com/stubbornbe/realtime-energy/wiki/Set-up-the-Realtime-Energy-webapp)
+- Set up logging in Cacti (Ok still have to write this part, but I will soon, I promise.
 
 ### OPTIONAL
 
