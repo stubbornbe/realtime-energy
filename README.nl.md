@@ -2,7 +2,7 @@
 
 Go to the [English readme](https://github.com/stubbornbe/realtime-energy/blob/main/README.nl.md)
 
-Webapp om energieverbruik in real time weer te geven, gebaseerd op live data uit teller met P1-port en SMA omvormer.
+Webapp om energieverbruik in real time weer te geven, gebaseerd op live data uit teller met P1-poort en SMA omvormer.
 
 ![mockup-small](https://github.com/user-attachments/assets/fb0771be-82e6-452d-bec4-2a595e65fb29)
 
